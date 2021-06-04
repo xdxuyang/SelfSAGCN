@@ -109,7 +109,7 @@ for t in range(10):
                 'acc_test: {:.4f}'.format(acc_test.item()),
                 'acc_val: {:.4f}'.format(acc_val.item()),
                 'time: {:.4f}s'.format(time.time() - t),
-                'semantic_loss: {:.4f}'.format(semantic_loss_1.item()))
+                'semantic_loss: {:.4f}'.format(semantic_loss.item()))
         losses_vae[epoch] = acc_val.item()
 
         return acc_val
